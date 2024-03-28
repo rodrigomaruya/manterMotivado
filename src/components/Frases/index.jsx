@@ -13,10 +13,8 @@ export default function Frase() {
 
         users().then(res=>{
             setDados(res.docs)
-            console.log(res.docs)
-            res.docs.forEach(e=>{
-                console.log(e.data())
-            })
+            
+    
         }).catch(error=>{
             console.log(error)
         })

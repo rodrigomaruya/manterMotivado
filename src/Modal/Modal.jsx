@@ -33,7 +33,7 @@ export default function Modal({closeModal,user}) {
         }else{
 
         try {
-            const docRef = await addDoc(collection(db, "frases"), {
+                await addDoc(collection(db, "frases"), {
                 data:formattedToday,
                 user:user,
                 frases:{
@@ -43,7 +43,7 @@ export default function Modal({closeModal,user}) {
                 }
         
             });
-            console.log("Document written with ID: ", docRef.id);
+            
             closeModal()
           } catch (e) {
             console.error("Error adding document: ", e);

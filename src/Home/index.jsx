@@ -18,7 +18,7 @@ export default function Home() {
     
     firebase.onAuthStateChanged(auth,(user)=>{
       if(user==null){
-        console.log(user)
+        
         setShowModalLogin(true)
         setShowModal(false)
       }else{
@@ -33,16 +33,11 @@ export default function Home() {
   const [dados,setDados]=useState([])
   let count=0
   useEffect(()=>{
-      // api().then(dados=>{
-          
-      //     setDados(dados)
-      // })
+  
       users().then(res=>{
           setDados(res.docs)
-          console.log(res.docs)
-          res.docs.forEach(e=>{
-              console.log(e.data())
-          })
+          
+        
       }).catch(error=>{
           console.log(error)
       })
