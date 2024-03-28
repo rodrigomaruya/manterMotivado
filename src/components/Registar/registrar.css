@@ -1,0 +1,57 @@
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    font-style: italic;
+    width: 100%;
+    padding-bottom: 10px;
+}
+form h1{
+    font-weight: 500;
+}
+.divConteiner{
+    width: 95%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.divCampo{
+    width: 100%;
+    padding: 7px;
+}
+.divCampo > div{
+    width: 100%;
+    
+}
+.divCampo div span{
+    margin-left: 20px;
+    color: red;
+    font-size: .7rem;
+}
+.divCampo input{
+    width: 100%;
+    padding: 5px;
+}
+.divButton{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.divButton button{
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    background-color: #70224B;
+    color: #eee;
+    cursor: pointer;
+
+}
+.divButton button:disabled{
+    background-color: #70224c67;
+}

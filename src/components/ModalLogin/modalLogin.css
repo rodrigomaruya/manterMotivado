@@ -1,0 +1,29 @@
+.container-show-modal-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+}
+.content-show-modal{
+    min-width: 357px;;
+    width: 400px;
+    height: 500px;
+    background-color: antiquewhite;
+   
+}
+.close{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+.close svg{
+    color: black;
+    font-size: 25px;
+}

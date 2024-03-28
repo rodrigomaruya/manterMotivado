@@ -1,0 +1,79 @@
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 100%;
+}
+.formContainer form{
+    width: 95%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.formContainer form h1{
+    font-style: italic;
+    font-weight: 600;
+}
+
+.mailConteiner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 5px;
+}
+.mailConteiner label{
+    width: 110px;
+}
+.mailConteiner input{
+    width: 100%;
+   padding: 5px;
+}
+.passContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 5px;
+}
+.passContainer label{
+    width: 110px;
+}
+.passContainer input{
+    width: 100%;
+    padding: 5px;
+   
+}
+.btnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+.btnContainer button{
+    width: 100%;
+    margin-bottom: 8px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.btnContainer :last-child{
+    background-color: #70224B;
+    color: white;
+}
+.error{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: red;
+  
+}

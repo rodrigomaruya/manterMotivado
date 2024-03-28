@@ -1,0 +1,68 @@
+
+
+.divImage{
+    width: 100%;
+    height: 500px;
+    background-color: #70224B;
+    background-image: url('../components/image/arvoreCortada.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center; 
+}
+
+.homeMain{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding-top: 10px;
+}
+.homeDiv{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    gap: 30px;
+}
+.homeP1{
+    margin-top: 10px;
+}
+
+
+.homeP2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+}
+
+.homeP2 button{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #70224B;
+    padding: 10px;
+    color: #eee;
+    border-radius: 5px;
+
+}
+.homeP2 svg{
+    font-size: 2rem;
+}
+@media(max-width:700px){
+    .divImage{
+        margin-top: 50px;
+        height: 200px;
+      
+    }
+    .homeDiv{
+        width: 97%;
+        flex-direction: column-reverse;
+
+    }
+    .homeP2{
+        justify-content: flex-start;
+    }
+}
