@@ -6,12 +6,13 @@ import { collection, getDocs, orderBy ,query } from "firebase/firestore";
 
 const firebaseConfig = {
 
-  apiKey: import.meta.env.VITE_APP_FIREBASE_API_KEY ,
-  authDomain: import.meta.env.VITE_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_APP_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_APP_FIREBASE_MESSAGING_SENDER,
-  appId: import.meta.env.VITE_APP_FIREBASE_APP_ID
+  apiKey: "AIzaSyAPZ3vn7QMvVNt1mHDRWJlXWCJy2Ka-n1M",
+  authDomain: "mantermotivado-bfd03.firebaseapp.com",
+  projectId: "mantermotivado-bfd03",
+  storageBucket: "mantermotivado-bfd03.appspot.com",
+  messagingSenderId: "346253474253",
+  appId: "1:346253474253:web:bb6a2c6404dae0e407ac84",
+  measurementId: "G-8WKWJ74BR8"
 };
 const app=fireBase.initializeApp(firebaseConfig);
 
