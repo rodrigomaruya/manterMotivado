@@ -21,10 +21,7 @@ export default function Frase() {
 
     },[])
     
-    const copy=async()=>{
-        await navigator.clipboard.writeText(dados[0].s_frases_frases)
-        alert('Frase copiada')
-    }
+
 
   return (
     <>
@@ -34,7 +31,7 @@ export default function Frase() {
             <div className='grid'>
                 <div className='conteudo_principal_esquerda' >
                     <h2>Frases</h2>
-                    {dados.map((dados=><CardFrases key={count++} copy={copy} dados={dados.data().frases}/>))}
+                    {dados.map((dados=><CardFrases key={count++}  dados={dados.data().frases}/>))}
                 </div>
        
                 <div className='conteudo_direita'>

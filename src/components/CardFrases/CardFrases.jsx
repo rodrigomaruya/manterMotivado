@@ -3,8 +3,14 @@ import { GiPadlockOpen } from "react-icons/gi";
 import { FaRegCopy } from "react-icons/fa"
 import './cardFrases.css'
 
-export default function CardFrases({dados,copy}) {
+export default function CardFrases({dados}) {
     const {frase,autor,nome}=dados
+
+    const copy=async()=>{ 
+        await navigator.clipboard.writeText(dados.frase)
+        alert('Frase copiada')
+    }
+
     let count=0
   return (
     <> 
@@ -21,7 +27,7 @@ export default function CardFrases({dados,copy}) {
                     <h3>Enviado por :</h3>
                     <p>{String(nome).toLocaleUpperCase()}</p>
                 </div>
-                <button onClick={copy}><FaRegCopy /></button>
+                <button onClick={()=>copy()}><FaRegCopy /></button>
             </footer>
         </div>     
     </>
